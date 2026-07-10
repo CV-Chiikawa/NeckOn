@@ -1,0 +1,273 @@
+/* 전체 */
+.mypage-container {
+  width: 100%;
+  max-width: none;
+  min-width: var(--desktop-min-width);
+  margin: 0 auto;
+  background: #ffffff;
+  min-height: 100vh;
+  padding: 40px 80px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* ===== 헤더 ===== */
+.mypage-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mypage-logo {
+  width: 160px;
+  cursor: pointer;
+}
+
+.mypage-divider {
+  position: absolute;
+  width: 1520px;
+  height: 2px;
+  background: #889B6C;
+
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ===== 카드 공통 ===== */
+.mypage-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 32px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid #999999;
+}
+
+/* ===== 프로필 ===== */
+.profile-card {
+  height: 110px;
+  margin-top: 80px; 
+}
+
+.profile-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 3%;
+}
+
+.profile-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111111;
+  margin-left: 18%;
+  text-align: left;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+.profile-file-name {
+  font-size: 13px;
+  color: #7a7a7a;
+}
+
+.profile-actions {
+  display: flex;
+  align-items: center;
+}
+
+/* ===== 정보 영역 ===== */
+.info-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 600;
+  width: 100px;
+  color: #111111;
+}
+
+.value {
+  font-size: 18px;
+  color: #111111;
+}
+
+.editable-info {
+  flex: 1;
+}
+
+.masked-value {
+  letter-spacing: 2px;
+}
+
+.edit-input {
+  width: 320px;
+  height: 44px;
+  border: 1px solid #c5c5c5;
+  border-radius: 12px;
+  padding: 0 14px;
+  font-size: 16px;
+  color: #111111;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+
+.edit-input:focus {
+  outline: none;
+  border-color: #889b6c;
+  background: #ffffff;
+}
+
+/* ===== 스냅샷 저장 동의 ===== */
+.snapshot-consent-card {
+  min-height: 44px;
+}
+
+.snapshot-consent-copy {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+}
+
+.snapshot-consent-label {
+  width: 160px;
+  white-space: nowrap;
+}
+
+.snapshot-consent-desc {
+  font-size: 14px;
+  line-height: 1.45;
+  color: #777777;
+  font-weight: 600;
+}
+
+.snapshot-toggle {
+  width: 68px;
+  height: 38px;
+  padding: 4px;
+  border: none;
+  border-radius: 999px;
+  background: #c9c9c9;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.snapshot-toggle span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.snapshot-toggle.is-on {
+  background: #889b6c;
+}
+
+.snapshot-toggle.is-on span {
+  transform: translateX(30px);
+}
+
+.contact-link-card {
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+  color: #111111;
+}
+
+.contact-link-label {
+  width: auto;
+}
+
+.contact-link-arrow {
+  color: #999999;
+  font-size: 30px;
+  line-height: 1;
+}
+
+/* ===== 작은 버튼 ===== */
+.small-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #7A7A7A;
+  background: transparent;
+  font-size: 13px;
+  cursor: pointer;
+  color: #7A7A7A;
+}
+
+/* ===== 탈퇴 ===== */
+.withdraw-card {
+  justify-content: flex-end;
+}
+
+.withdraw-btn {
+  border: none;
+  background: transparent;
+  color: #999999;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ===== 저장 버튼 ===== */
+.save-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.save-btn {
+  width: 400px;
+  height: 60px;
+  border-radius: 16px;
+  border: none;
+  background: #889b6c;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.save-btn:disabled {
+  background: #b7bea9;
+  cursor: not-allowed;
+}
+
+.withdraw-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+.mypage-loading {
+  margin-top: 120px;
+  text-align: center;
+  font-size: 18px;
+  color: #555555;
+}

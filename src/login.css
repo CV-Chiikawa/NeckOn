@@ -1,0 +1,100 @@
+/* 전체 */
+.login-container {
+  width: 100%;
+  max-width: 1440px;
+  min-width: 1440px;
+  margin: auto;
+  height: 100vh;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+/* 로고 */
+.login-logo {
+  position: absolute;
+  width: 180px;
+  top: 70px;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+
+/* 구분선 */
+.divider {
+  position: absolute;
+  width: 410px;
+  height: 2px;
+  background: #889B6C;
+
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 카드 */
+.login-card {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* 한 줄 */
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 라벨 */
+.form-row label {
+  width: 100px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* input */
+.form-row input {
+  flex: 1;
+  padding: 18px 20px;
+
+  border-radius: 20px;
+  border: 1px solid #ddd;
+
+  font-size: 16px;
+}
+
+/* placeholder */
+.form-row input::placeholder {
+  color: #bbb;
+}
+
+/* 회원가입 텍스트 */
+.signup-text {
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* 버튼 */
+.login-btn {
+  margin-top: 30px;
+  padding: 18px;
+
+  border: none;
+  border-radius: 16px;
+
+  background: #889b6c;
+  color: white;
+
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}

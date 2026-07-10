@@ -1,0 +1,166 @@
+
+
+/* 전체 컨테이너 */
+.signupAgree-container {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 로고 */
+.signupAgree-logo {
+  width: 180px;
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+/* 구분선 */
+.signupAgree-divider {
+  flex: 0 0 auto;
+  width: min(410px, calc(100% - 48px));
+  height: 2px;
+  background: #889B6C;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* 카드 */
+.card {
+  width: min(720px, calc(100% - 48px));
+  box-sizing: border-box;
+  background: white;
+  border-radius: 16px;
+  border: 1.5px solid #888888;
+  margin-top: 0;
+  padding: 18px 20px 16px;
+}
+
+/* 전체 동의 */
+.all-check {
+  font-size: 20px;
+  font-weight: 500;
+  color: #111111;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.all-check input {
+  width: 22px;
+  height: 22px;
+  accent-color: #889B6C;
+}
+
+/* 구분선 */
+.line {
+  width: 100%;
+  height: 2px;
+  background: #889B6C;
+  margin: 14px 0 18px;
+}
+
+/* ===== 핵심: 개별 항목 ===== */
+.item {
+  display: flex;
+  align-items: flex-start;  
+  gap: 16px;
+
+  margin: 0 0 14px;
+}
+
+/* 텍스트 묶음 */
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* 제목 */
+.title {
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+  color: #777777;
+  
+
+  display: flex;      
+
+}
+
+.required {
+  width: 60px;         
+  flex-shrink: 0; 
+}
+
+/* 설명 */
+.desc {
+  font-size: 12px;
+  color: #999999;
+  font-weight: 600;  
+
+  margin: 4px 0 0 0;
+  line-height: 1.5;
+}
+
+/* ===== 체크박스 커스텀 ===== */
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+
+  border: 1px solid #666666;
+  border-radius: 4px;
+  background: white;
+
+  cursor: pointer;
+  position: relative;
+}
+
+/* 체크됐을 때 */
+input[type="checkbox"]:checked {
+  background: #889B6C;
+  border: none;
+}
+
+/* 체크 표시 */
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+
+  color: white;
+  font-size: 14px;
+}
+
+/* 버튼 */
+.next-btn {
+  width: min(420px, calc(100% - 48px));
+  padding: 18px;
+
+  background: #889B6C;
+  border: none;
+  border-radius: 14px;
+
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+
+  margin-top: 28px;
+}
+
+/* 하단 텍스트 */
+.login-text {
+  color: #999999;
+  font-weight: 600;
+  margin-top: 10px;
+}

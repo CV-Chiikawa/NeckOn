@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@700&display=swap');
+
+/* 기본 초기화 */
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+/* 배경 */
+.main {
+  width: 100%;
+  min-width: var(--desktop-min-width);
+  min-height: 100vh;
+  background-image: url("../public/images/web-main.png");
+  background-size: 180% auto;
+  background-position: 95% center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/*기준 좌표*/
+.overlay {
+  width: 100%;
+  min-width: var(--desktop-min-width);
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+
+.nav {
+  position: relative;
+  z-index: 3;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* 로고 */
+.logo {
+  position: absolute;
+  left: 70px;
+  top: 71px;
+}
+
+.logo-img {
+  width: 180px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* ===== 로그인 / 회원가입 ===== */
+.auth {
+  position: absolute;
+  right: 70px;
+  top: 71px;
+  display: flex;
+  gap: 10px;
+}
+
+.auth-img {
+  width: 102px;
+  height: 37px;
+  cursor: pointer;
+  display: block;
+}
+
+/* ===== 서브 텍스트 ===== */
+.sub {
+  position: absolute;
+
+  /* 위치 */
+  left: 0px;
+  top: 270px;
+
+  /* 크기 */
+  width: 731px;
+  height: 41px;
+
+  /* 폰트 */
+  font-family: 'Anybody', sans-serif;
+  font-weight: 700;    
+  font-size: 30px;
+  line-height: 100%;    
+  letter-spacing: 0%;
+
+  /* 색상 */
+  color: #FFFFFF;
+
+  margin: 0;
+}
+
+/* ===== 메인 제목 ===== */
+.main-title {
+  position: absolute;
+
+  /* 위치 */
+  left: 103px;
+  top: 360px;
+
+  /* 크기 */
+  width: 1100px;
+  height: 132px;
+
+  /* 폰트 */
+  font-family: 'Anybody', sans-serif;
+  font-weight: 700;       
+  font-size: 50px;
+  line-height: 100%;     
+  letter-spacing: 0%;
+  text-align: left;
+
+  /* 색상 */
+  color: #FFFFFF;
+
+  margin: 0;
+}
+
+.start-btn {
+  position: absolute;
+  left: 100px;
+  top: 570px;
+
+  width: 240px;    
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #889B6C;
+  color:black;
+  border-radius: 20px;
+  border: none;
+
+  font-size: 20px;  
+  font-weight: 600;
+
+  cursor: pointer;
+  z-index: 2;
+}
