@@ -1,0 +1,47 @@
+# Explicit project exclusions
+deploy/
+turtle-neck/turtle-neck-update.zip
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+coverage/
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+serviceAccountKey.json
+serviceAccount*.json
+firebase-service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local databases and runtime data
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.db-shm
+*.db-wal
+public/uploads/**
+!public/uploads/.gitkeep
+
+# Logs and caches
+*.log
+logs/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

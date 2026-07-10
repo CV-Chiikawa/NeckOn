@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+serviceAccountKey.json
+serviceAccount*.json
+firebase-service-account*.json
+*.pem
+*.key
+*.p12
+
+# Local databases
+database.sqlite
+database.sqlite-shm
+database.sqlite-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.db-shm
+*.db-wal
+
+# Runtime uploads and generated files
+public/uploads/**
+!public/uploads/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+
+# Test and coverage output
+coverage/
+.nyc_output/
+test/.tmp/
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Local tunnel binaries/files
+ngrok.exe
+.ngrok.exe.old
+ngrok
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo

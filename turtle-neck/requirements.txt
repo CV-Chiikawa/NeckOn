@@ -1,0 +1,17 @@
+# npm dependency list for this project
+# Standard npm install is still: npm install
+#
+# If you want to install from this file in PowerShell:
+# npm install (Get-Content requirements.txt | Where-Object { $_.Trim() -and -not $_.Trim().StartsWith('#') })
+
+bcrypt@^6.0.0
+cookie-parser@^1.4.7
+cors@^2.8.6
+dotenv@^17.3.1
+express@^5.2.1
+firebase@^12.11.0
+firebase-admin@^13.7.0
+jsonwebtoken@^9.0.3
+multer@^2.1.1
+path@^0.12.7
+sqlite3@^6.0.1
