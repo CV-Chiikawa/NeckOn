@@ -1,0 +1,41 @@
+# Dependencies and Expo output
+node_modules/
+.expo/
+.expo-shared/
+dist/
+build/
+builds/
+web-build/
+.eas/
+*.apk
+*.aab
+*.ipa
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+google-services.json
+GoogleService-Info.plist
+
+# Logs and caches
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+coverage/
+
+# Generated Expo types
+expo-env.d.ts
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
