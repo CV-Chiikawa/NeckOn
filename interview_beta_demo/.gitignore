@@ -1,0 +1,19 @@
+# Local environments, secrets and runtime artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+*.jsonl
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+interview.json
+validation/*
+!validation/REPORT.md

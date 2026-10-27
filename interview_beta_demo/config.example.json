@@ -1,0 +1,19 @@
+{
+  "min_visibility": 0.6,
+  "head_tilt_deg": 10.0,
+  "shoulder_height_ratio": 0.08,
+  "torso_lean_deg": 10.0,
+  "camera_roll_deg": 0.0,
+  "max_depth_width_ratio": 0.8,
+  "caution_seconds": 2.0,
+  "warning_seconds": 4.0,
+  "recovery_seconds": 1.0,
+  "cooldown_seconds": 10.0,
+  "max_gap_seconds": 2.5,
+  "sway_window_seconds": 8.0,
+  "sway_min_seconds": 4.0,
+  "sway_amplitude_ratio": 0.22,
+  "sway_reversal_ratio": 0.08,
+  "sway_min_cycles": 2,
+  "sway_smoothing_seconds": 0.2
+}

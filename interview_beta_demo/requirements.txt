@@ -1,0 +1,5 @@
+# Reproduces the installed Python 3.11 environment used for this Beta.
+# contrib includes cv2; do not also install opencv-python in this separate venv.
+mediapipe==0.10.14
+opencv-contrib-python==4.13.0.92
+numpy==2.4.4
